@@ -1,0 +1,16 @@
+
+
+h1{
+    color: blue;
+    border-bottom: 10px dotted lightgreen;
+}
+h2{
+    color: rgb(127, 170, 255);
+    border: 10px solid yellow;
+}
+h3{
+    background-color: rgb(150, 150, 150);
+}
+ul{
+    background-color: #eeeeee;
+}
