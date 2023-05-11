@@ -30,8 +30,10 @@ function hantei() {
     } else if (kotae < yoso) {
       console.log("まちがい．答えはもっと小さいですよ");
     }  
-  } else if (kaisu === 3) {
+  } else if (kaisu === 3 && kotae !== yoso) {
     console.log("まちがい．残念でした答えは" + kotae + "です．");
+  } else if (kaisu === 3 && kotae === yoso) {
+    console.log("正解です．おめでとう!");
   } else if (kaisu > 3) {
     console.log("答えは" + kotae + "でした．すでにゲームは終わっています");
   }
