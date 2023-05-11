@@ -20,5 +20,5 @@ for (let a of buildingD){
 	console.log(a);
 }
 for (let b of gakka){
-	console.log(b);
+	console.log(b.name);
 }
