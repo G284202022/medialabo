@@ -46,8 +46,8 @@ for (let l of li) {
 }
 // 練習4-5 箇条書き追加プログラム
 let z = document.querySelector('ul#location');
-for (let zahyou of data) {
-	zahyou = document.createElement('li');
-    zahyou.textContent = zahyou.name+'...'+zahyou.lat+','+zahyou.lng;
+for (let i = 0; i<10; i = i+1) {
+	let zahyou = document.createElement('li');
+    zahyou.textContent = zahyou[i].name+'...'+zahyou[i].lat+','+zahyou[i].lng;
+	z.insertAdjacentElement('beforeend', zahyou);
 }
-z.insertAdjacentElement('beforeend', zahyou);
