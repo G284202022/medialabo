@@ -48,6 +48,6 @@ for (let l of li) {
 let z = document.querySelector('ul#location');
 for (let zahyou of data) {
 	zahyou = document.createElement('li');
-    zahyou.textContent = data.name+'...'+data.lat+','+data.lng;
+    zahyou.textContent = zahyou.name+'...'+zahyou.lat+','+zahyou.lng;
 }
 z.insertAdjacentElement('beforeend', zahyou);
