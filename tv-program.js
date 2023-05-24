@@ -82,4 +82,8 @@ let data = {
 /////////////////// 課題3-2 はここから書き始めよう
 for (let a of data.list.g1){
 	console.log(a.service.name+":"+a.title);
+  let j = document.querySelector('p#jouhou');
+  let j1 = document.createElement('p');
+  j1.textContent = a.service.name+':'+a.title;
+  j.insertAdjacentElement('beforeend', j1);
 }
