@@ -36,13 +36,13 @@ function hantei() {
       let a = document.querySelector('p#result');
       let a1 = document.createElement('p');
       a1.textContent = '正解です.おめでとう!';
-      a.insertAdjacentElement('beforeend', a1);
+      a.insertAdjacentElement('afterend', a1);
     } else if (kotae > yoso) {
       console.log("まちがい．答えはもっと大きいですよ");
       let b = document.querySelector('p#result');
       let b1 = document.createElement('p');
       b1.textContent = 'まちがい.答えはもっと大きいですよ';
-      b.insertAdjacentElement('beforeend', b1);
+      b.insertAdjacentElement('afterend', b1);
     } else if (kotae < yoso) {
       console.log("まちがい．答えはもっと小さいですよ");
       let c = document.querySelector('p#result');
