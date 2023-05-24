@@ -22,11 +22,11 @@ function hantei() {
   let k = document.querySelector('span#kaisu');
   let k1 = document.createElement('p');
   k1.textContent = kaisu;
-  k.insertAdjacentElement('beforeend', k1);
+  k.insertAdjacentElement('afterend', k1);
   let y = document.querySelector('span#answer');
   let y1 = document.createElement('p');
   y1.textContent = yoso;
-  y.insertAdjacentElement('beforeend', y1);
+  y.insertAdjacentElement('afterend', y1);
   // 課題3-1: 正解判定する
   // kotae と yoso が一致するかどうか調べて結果を出力
   // 課題3-1における出力先はコンソール
