@@ -47,7 +47,7 @@ for (let l of li) {
 // 練習4-5 箇条書き追加プログラム
 let z = document.querySelector('ul#location');
 let z0 = document.createElement('li');
-z0.textContent = data[0].name+'...'+data[0]+','+data[0].lng;
+z0.textContent = data[0].name+'...'+data[0].lat+','+data[0].lng;
 z.insertAdjacentElement('beforeend', z0);
 let z1 = document.createElement('li');
 z1.textContent = data[1].name+'...'+data[1].lat+","+data[1].lng;
