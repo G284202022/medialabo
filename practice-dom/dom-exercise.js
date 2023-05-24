@@ -46,8 +46,33 @@ for (let l of li) {
 }
 // 練習4-5 箇条書き追加プログラム
 let z = document.querySelector('ul#location');
-for (let zahyou of data) {
-	zahyou = document.createElement('li');
-    zahyou.textContent = zahyou.name+'...'+zahyou.lat+','+zahyou.lng;
-	z.insertAdjacentElement('beforeend', zahyou);
-}
+let z0 = document.createElement('li');
+z0.textContent = data[0].name+'...'+data[0]+','+data[0].lng;
+z.insertAdjacentElement('beforeend', z0);
+let z1 = document.createElement('li');
+z1.textContent = data[1].name+'...'+data[1].lat+","+data[1].lng;
+z.insertAdjacentElement('beforeend', z1);
+let z2 = document.createElement('li');
+z2.textContent = data[2].name+'...'+data[2].lat+","+data[2].lng;
+z.insertAdjacentElement('beforeend', z2);
+let z3 = document.createElement('li');
+z3.textContent = data[3].name+'...'+data[3].lat+","+data[3].lng;
+z.insertAdjacentElement('beforeend', z3);
+let z4 = document.createElement('li');
+z4.textContent = data[4].name+'...'+data[4].lat+","+data[4].lng;
+z.insertAdjacentElement('beforeend', z4);
+let z5 = document.createElement('li');
+z5.textContent = data[5].name+'...'+data[5].lat+","+data[5].lng;
+z.insertAdjacentElement('beforeend', z5);
+let z6 = document.createElement('li');
+z6.textContent = data[6].name+'...'+data[6].lat+","+data[6].lng;
+z.insertAdjacentElement('beforeend', z6);
+let z7 = document.createElement('li');
+z7.textContent = data[7].name+'...'+data[7].lat+","+data[7].lng;
+z.insertAdjacentElement('beforeend', z7);
+let z8 = document.createElement('li');
+z8.textContent = data[8].name+'...'+data[8].lat+","+data[8].lng;
+z.insertAdjacentElement('beforeend', z8);
+let z9 = document.createElement('li');
+z9.textContent = data[9].name+'...'+data[9].lat+","+data[9].lng;
+z.insertAdjacentElement('beforeend', z9);
