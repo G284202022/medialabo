@@ -16,7 +16,7 @@ h.addEventListener('click', hantei);
 function hantei() {
   // 将来ここでは 4 ではなくテキストボックスに指定された数値を yoso に代入する
   let i = document.querySelector('input[name="shimei"]');
-  let yoso = i.value;
+  let yoso = Number(i.value);
   kaisu = kaisu + 1;
   console.log(kaisu + "回目の予想: " + yoso);
   let k = document.querySelector('span#kaisu');
