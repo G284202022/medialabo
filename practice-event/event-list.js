@@ -28,7 +28,7 @@ c7.addEventListener('blur', changeColor);
 
 // cell8: キーボードのキー入力すると色が変わる
 let c8 = document.querySelector('#cell8');
-c8.addEventListener('ckeypress', changeColor);
+c8.addEventListener('keypress', changeColor);
 
 // cell9: キーボードのキーを押すと色が変わる
 let c9 = document.querySelector('#cell9');
