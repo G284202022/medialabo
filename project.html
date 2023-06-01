@@ -4,14 +4,46 @@
         <meta charset="utf-8">
         <title>NHKの番組表</title>
         <link rel="stylesheet" href="projectstyle.css">
-        <script src="tv-program.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js" defer></script>
+        <script src="project.js" defer></script>
       </head>
       <body>
         <h1>NHKの番組表</h1>
-        <!--ジャンルで検索、時間ごとの番組名、番組説明文の表-->
-        <label for="kensaku">検索:</label>
-        <input type="search" name="kensaku" id="kensaku" size="10">
-        <button id="print">検索</button>
-        <p id="jouhou"></p>
+        <h2>番組を選択してください</h2>
+        <P>
+          <input type="radio" name="bangumi" id="bangumi1" value="1">
+          <label for="bangumi1">NHK総合1</label>
+          <input type="radio" name="bangumi" id="bangumi2" value="2">
+          <label for="bangumi2">Eテレ1</label>
+        </P>
+        <h2>ジャンルを選択してください</h2>
+        <p>
+          <input type="radio" name="janru" id="news" value="news">
+          <label for="news">ニュース・報道</label>
+          <input type="radio" name="janru" id="sport" value="sport">
+          <label for="sport">スポーツ</label>
+          <input type="radio" name="janru" id="wide" value="wide">
+          <label for="wide">情報・ワイドショー</label>
+          <input type="radio" name="janru" id="drama" value="drama">
+          <label for="drama">ドラマ</label>
+          <input type="radio" name="janru" id="music" value="music">
+          <label for="music">音楽</label>
+          <input type="radio" name="janru" id="vala" value="vala">
+          <label for="vala">バラエティ</label>
+          <input type="radio" name="janru" id="mov" value="mov">
+          <label for="mov">映画</label>
+          <input type="radio" name="janru" id="ani" value="ani">
+          <label for="ani">アニメ</label>
+          <input type="radio" name="janru" id="docu" value="docu">
+          <label for="docu">ドキュメンタリー・教養</label>
+          <input type="radio" name="janru" id="geki" value="geki">
+          <label for="drama">劇場・公演</label>
+          <input type="radio" name="janru" id="syumi" value="syumi">
+          <label for="syumi">趣味・教育</label>
+          <input type="radio" name="janru" id="hukusi" value="hukusi">
+          <label for="hukusi">福祉</label>
+        </p>
+        <p><button id="kensaku">検索</button></p>
+        <h3></h3>
       </body>
 </html>
