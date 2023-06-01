@@ -1,4 +1,6 @@
-
+*{
+    background-color: gray;
+}
 h1{
     color: rgb(230, 153, 166);
     border-bottom: 10px dotted rgb(139, 209, 231);
@@ -7,17 +9,17 @@ h2{
     color: rgb(47, 255, 47);
 }
 h3{
-   border-bottom: 10px gray;
+   border-bottom: 10px yellow;
 }
 p.sv{
-    border: 5px solid gray;
+    border: 5px solid blue;
     padding: 30px;
     margin: 50px;
     width: 200px;
     height: 50px;
 }
 p.jn{
-    border: 5px solid gray;
+    border: 5px solid blue;
     padding: 30px;
     margin: 50px;
     width: 400px;
