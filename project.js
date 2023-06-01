@@ -46,10 +46,24 @@ function showResult(resp) {
     if (typeof data === 'string') {
         data = JSON.parse(data);
     }
-    let h3 = document.querySelector('h3');
-    let setumei = document.createElement('p');
-    setumei.textContent = data;
-    h3.insertAdjacentElement('afterend', setumei);
+    for (let a of data.list.s){
+        let j = document.querySelector('h3');
+        let j1 = document.createElement('p');
+        j1.textContent = 'チャンネル名:'+a.service.name;
+        j.insertAdjacentElement('beforeend', j1);
+        let j2 = document.createElement('p');
+        j2.textContent = '番組名:'+a.title;
+        j.insertAdjacentElement('beforeend', j2);
+        let j3 = document.createElement('p');
+        j3.textContent = '開始時刻:'+a.start_name;
+        j.insertAdjacentElement('beforeend', j3);
+        let j4 = document.createElement('p');
+        j4.textContent = '終了時刻:'+a.end_time;
+        j.insertAdjacentElement('beforeend', j4);
+        let j5 = document.createElement('p');
+        j5.textContent = '番組説明:'+a.content;
+        j.insertAdjacentElement('beforeend', j5);
+    }
 }
 function showError(err) {
     console.log(err);
