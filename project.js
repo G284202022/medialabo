@@ -49,36 +49,61 @@ function showResult(resp) {
     let sv = document.querySelectorAll('input[name="bangumi"]');
     let s;
     if(sv[0].checked){
-        s = 'g1';
-    } else if (sv[1].checked){
-        s = 'e1'
+        for (let a of data.list.g1){
+            let j = document.querySelector('h3');
+            let j0 = document.createElement('p');
+            j0.textContent = '--------------------------------------------------------------------------------------';
+            j.insertAdjacentElement('beforeend', j0);
+            let j1 = document.createElement('p');
+            j1.textContent = 'チャンネル名:'+a.service.name;
+            j.insertAdjacentElement('beforeend', j1);
+            let j2 = document.createElement('p');
+            j2.textContent = '番組名:'+a.title;
+            j.insertAdjacentElement('beforeend', j2);
+            let j3 = document.createElement('p');
+            j3.textContent = 'サブタイトル:'+a.subtitle;
+            j.insertAdjacentElement('beforeend', j3);
+            let j4 = document.createElement('p');
+            j4.textContent = '開始時刻:'+a.start_name;
+            j.insertAdjacentElement('beforeend', j4);
+            let j5 = document.createElement('p');
+            j5.textContent = '終了時刻:'+a.end_time;
+            j.insertAdjacentElement('beforeend', j5);
+            let j6 = document.createElement('p');
+            j6.textContent = '番組説明:'+a.content;
+            j.insertAdjacentElement('beforeend', j6);
+            let j7 = document.createElement('p');
+            j7.textContent = '出演者'+a.act;
+            j.insertAdjacentElement('beforeend', j7);
     }
-    for (let a of data.list.s){
-        let j = document.querySelector('h3');
-        let j0 = document.createElement('p');
-        j0.textContent = '--------------------------------------------------------------------------------------';
-        j.insertAdjacentElement('beforeend', j0);
-        let j1 = document.createElement('p');
-        j1.textContent = 'チャンネル名:'+a.service.name;
-        j.insertAdjacentElement('beforeend', j1);
-        let j2 = document.createElement('p');
-        j2.textContent = '番組名:'+a.title;
-        j.insertAdjacentElement('beforeend', j2);
-        let j3 = document.createElement('p');
-        j3.textContent = 'サブタイトル:'+a.subtitle;
-        j.insertAdjacentElement('beforeend', j3);
-        let j4 = document.createElement('p');
-        j4.textContent = '開始時刻:'+a.start_name;
-        j.insertAdjacentElement('beforeend', j4);
-        let j5 = document.createElement('p');
-        j5.textContent = '終了時刻:'+a.end_time;
-        j.insertAdjacentElement('beforeend', j5);
-        let j6 = document.createElement('p');
-        j6.textContent = '番組説明:'+a.content;
-        j.insertAdjacentElement('beforeend', j6);
-        let j7 = document.createElement('p');
-        j7.textContent = '出演者'+a.act;
-        j.insertAdjacentElement('beforeend', j7);
+    }  else if(sv[1].checked){
+        for (let a of data.list.e1){
+            let j = document.querySelector('h3');
+            let j0 = document.createElement('p');
+            j0.textContent = '--------------------------------------------------------------------------------------';
+            j.insertAdjacentElement('beforeend', j0);
+            let j1 = document.createElement('p');
+            j1.textContent = 'チャンネル名:'+a.service.name;
+            j.insertAdjacentElement('beforeend', j1);
+            let j2 = document.createElement('p');
+            j2.textContent = '番組名:'+a.title;
+            j.insertAdjacentElement('beforeend', j2);
+            let j3 = document.createElement('p');
+            j3.textContent = 'サブタイトル:'+a.subtitle;
+            j.insertAdjacentElement('beforeend', j3);
+            let j4 = document.createElement('p');
+            j4.textContent = '開始時刻:'+a.start_name;
+            j.insertAdjacentElement('beforeend', j4);
+            let j5 = document.createElement('p');
+            j5.textContent = '終了時刻:'+a.end_time;
+            j.insertAdjacentElement('beforeend', j5);
+            let j6 = document.createElement('p');
+            j6.textContent = '番組説明:'+a.content;
+            j.insertAdjacentElement('beforeend', j6);
+            let j7 = document.createElement('p');
+            j7.textContent = '出演者'+a.act;
+            j.insertAdjacentElement('beforeend', j7);
+        }
     }
 }
 function showError(err) {
