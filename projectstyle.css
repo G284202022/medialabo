@@ -8,9 +8,7 @@ h1{
 h2{
     color: rgb(47, 255, 47);
 }
-h3{
-   border-bottom: 10px yellow;
-}
+
 p.sv{
     border: 5px solid blue;
     padding: 30px;
