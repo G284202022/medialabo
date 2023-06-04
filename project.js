@@ -47,61 +47,38 @@ function showResult(resp) {
         data = JSON.parse(data);
     }
     let sv = document.querySelectorAll('input[name="bangumi"]');
-    let s;
+    s[i] = [];
+    for(i = 0; i < 6; i++){
+      s[i] = document.createElement('td');
+    }
+    s[0].textContent = g.title;
+    s[1].textContent = g.service.name;
+    s[2].textContent = a.start_name; 
+    s[3].textContent = a.end_time;
+    s[4].textContent = a.content;
+    s[5].textContent = a.act;
+
     if(sv[0].checked){
         for (let a of data.list.g1){
-            let j0 = document.querySelector('h3#k0');
-            j0.textContent = '--------------------------------------------------------------------------------------';
-
-            let j1 = document.querySelector('h3#k1');
-            j1.textContent = 'チャンネル名:'+a.service.name;
-
-            let j2 = document.querySelector('h3#k2');
-            j2.textContent = '番組名:'+a.title;
-            
-            let j3 = document.querySelector('h3#k3');
-            j3.textContent = 'サブタイトル:'+a.subtitle;
-            
-            let j4 = document.querySelector('h3#k4');
-            j4.textContent = '開始時刻:'+a.start_name;
-            
-            let j5 = document.querySelector('h3#k5');
-            j5.textContent = '終了時刻:'+a.end_time;
-            
-            let j6 = document.querySelector('h3#k6');
-            j6.textContent = '番組説明:'+a.content;
-            
-            let j7 = document.querySelector('h3#k7');
-            j7.textContent = '出演者'+a.act;
-            
+            let tb = document.querySelector('tbody');	
+            let y = document.createElement('tr');
+            for (let i = 0;i<6;i++){
+                let tr = document.querySelector('tr');
+                let setumei = document.createElement('td');
+                j.textContent = s[i];
+                tr.insertAdjacentElement('beforeend', j);
+            }
     }
     }  else if(sv[1].checked){
         for (let a of data.list.e1){
-            
-            let j0 = document.querySelector('h3#k0');
-            j0.textContent = '--------------------------------------------------------------------------------------';
-            
-            let j1 = document.querySelector('h3#k1');
-            j1.textContent = 'チャンネル名:'+a.service.name;
-            
-            let j2 = document.querySelector('h3#k2');
-            j2.textContent = '番組名:'+a.title;
-            
-            let j3 = document.querySelector('h3#k3');
-            j3.textContent = 'サブタイトル:'+a.subtitle;
-            
-            let j4 = document.querySelector('h3#k4');
-            j4.textContent = '開始時刻:'+a.start_name;
-            
-            let j5 = document.querySelector('h3#k5');
-            j5.textContent = '終了時刻:'+a.end_time;
-            
-            let j6 = document.querySelector('h3#k6');
-            j6.textContent = '番組説明:'+a.content;
-            
-            let j7 = document.querySelector('h3#k7');
-            j7.textContent = '出演者'+a.act;
-            
+            let tb = document.querySelector('tbody');	
+            let y = document.createElement('tr');
+            for (let i = 0;i<6;i++){
+                let tr = document.querySelector('tr');
+                let setumei = document.createElement('td');
+                j.textContent = s[i];
+                tr.insertAdjacentElement('beforeend', j);
+            }
         }
     }
 }
