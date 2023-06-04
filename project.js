@@ -68,7 +68,8 @@ function showResult(resp) {
     }  else if(sv[1].checked){
         for (let a of data.list.e1){
             let tb = document.querySelector('tbody');	
-            let y = document.createElement('tr#body');
+            let y = document.createElement('tr');
+            Element.id ='body';
             var s = [a.titile,a.service.name,a.start_name,a.end_time,a.content,a.act];
             for (let i = 0;i<6;i++){
                 let tr = document.querySelector('tr#body');
