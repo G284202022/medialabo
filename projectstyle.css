@@ -27,4 +27,7 @@ p {
     font-family: arial;
     background: white;
   }
+thead{
+    background-color: aqua;
+}
   
