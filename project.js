@@ -56,16 +56,7 @@ function showResult(resp) {
         for (let a of data.list.g1){
             let tb = document.querySelector('tbody');	
             let y = document.createElement('tr');
-            s[i] = [];
-            for(i = 0; i < 6; i++){
-              s[i] = document.createElement('td');
-            }
-            s[0].textContent = a.title;
-            s[1].textContent = a.service.name;
-            s[2].textContent = a.start_name; 
-            s[3].textContent = a.end_time;
-            s[4].textContent = a.content;
-            s[5].textContent = a.act;
+            var s = [a.titile,a.service.name,a.start_name,a.end_time,a.content,a.act];
             for (let i = 0;i<6;i++){
                 let tr = document.querySelector('tr');
                 let setumei = document.createElement('td');
@@ -77,16 +68,7 @@ function showResult(resp) {
         for (let a of data.list.e1){
             let tb = document.querySelector('tbody');	
             let y = document.createElement('tr');
-            s[i] = [];
-            for(i = 0; i < 6; i++){
-              s[i] = document.createElement('td');
-            }
-            s[0].textContent = a.title;
-            s[1].textContent = a.service.name;
-            s[2].textContent = a.start_name; 
-            s[3].textContent = a.end_time;
-            s[4].textContent = a.content;
-            s[5].textContent = a.act;
+            var s = [a.titile,a.service.name,a.start_name,a.end_time,a.content,a.act];
             for (let i = 0;i<6;i++){
                 let tr = document.querySelector('tr');
                 let setumei = document.createElement('td');
