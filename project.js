@@ -46,12 +46,12 @@ function showResult(resp) {
     if (typeof data === 'string') {
         data = JSON.parse(data);
     }
-    let sv = document.querySelectorAll('input[name="bangumi"]');
+
     let kesu = document.querySelectorAll('tr');
     for(let s of kesu){
       s.remove();
     }
-
+    let sv = document.querySelectorAll('input[name="bangumi"]');
     if(sv[0].checked){
         for (let a of data.list.g1){
             let tb = document.querySelector('tbody');	
