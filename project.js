@@ -47,7 +47,7 @@ function showResult(resp) {
         data = JSON.parse(data);
     }
 
-    let kesu = document.querySelectorAll('tr');
+    let kesu = document.querySelectorAll('tbody > tr');
     for(let s of kesu){
       s.remove();
     }
