@@ -47,7 +47,7 @@ function showResult(resp) {
         data = JSON.parse(data);
     }
 
-    let kesu = document.querySelectorAll('tbody > tr');
+    let kesu = document.querySelectorAll('tr#body');
     for(let s of kesu){
       s.remove();
     }
@@ -55,10 +55,10 @@ function showResult(resp) {
     if(sv[0].checked){
         for (let a of data.list.g1){
             let tb = document.querySelector('tbody');	
-            let y = document.createElement('tr');
+            let y = document.createElement('tr#body');
             var s = [a.titile,a.service.name,a.start_name,a.end_time,a.content,a.act];
             for (let i = 0;i<6;i++){
-                let tr = document.querySelector('tr');
+                let tr = document.querySelector('tr#body');
                 let j = document.createElement('td');
                 j.textContent = s[i];
                 tr.insertAdjacentElement('beforeend', j);
@@ -67,10 +67,10 @@ function showResult(resp) {
     }  else if(sv[1].checked){
         for (let a of data.list.e1){
             let tb = document.querySelector('tbody');	
-            let y = document.createElement('tr');
+            let y = document.createElement('tr#body');
             var s = [a.titile,a.service.name,a.start_name,a.end_time,a.content,a.act];
             for (let i = 0;i<6;i++){
-                let tr = document.querySelector('tr');
+                let tr = document.querySelector('tr#body');
                 let j = document.createElement('td');
                 j.textContent = s[i];
                 tr.insertAdjacentElement('beforeend', j);
