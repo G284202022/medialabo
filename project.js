@@ -59,7 +59,7 @@ function showResult(resp) {
             var s = [a.titile,a.service.name,a.start_name,a.end_time,a.content,a.act];
             for (let i = 0;i<6;i++){
                 let tr = document.querySelector('tr');
-                let setumei = document.createElement('td');
+                let j = document.createElement('td');
                 j.textContent = s[i];
                 tr.insertAdjacentElement('beforeend', j);
             }
@@ -71,7 +71,7 @@ function showResult(resp) {
             var s = [a.titile,a.service.name,a.start_name,a.end_time,a.content,a.act];
             for (let i = 0;i<6;i++){
                 let tr = document.querySelector('tr');
-                let setumei = document.createElement('td');
+                let j = document.createElement('td');
                 j.textContent = s[i];
                 tr.insertAdjacentElement('beforeend', j);
             }
