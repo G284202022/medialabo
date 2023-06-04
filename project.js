@@ -47,21 +47,25 @@ function showResult(resp) {
         data = JSON.parse(data);
     }
     let sv = document.querySelectorAll('input[name="bangumi"]');
-    s[i] = [];
-    for(i = 0; i < 6; i++){
-      s[i] = document.createElement('td');
+    let kesu = document.querySelectorAll('tr');
+    for(let s of kesu){
+      s.remove();
     }
-    s[0].textContent = g.title;
-    s[1].textContent = g.service.name;
-    s[2].textContent = a.start_name; 
-    s[3].textContent = a.end_time;
-    s[4].textContent = a.content;
-    s[5].textContent = a.act;
 
     if(sv[0].checked){
         for (let a of data.list.g1){
             let tb = document.querySelector('tbody');	
             let y = document.createElement('tr');
+            s[i] = [];
+            for(i = 0; i < 6; i++){
+              s[i] = document.createElement('td');
+            }
+            s[0].textContent = a.title;
+            s[1].textContent = a.service.name;
+            s[2].textContent = a.start_name; 
+            s[3].textContent = a.end_time;
+            s[4].textContent = a.content;
+            s[5].textContent = a.act;
             for (let i = 0;i<6;i++){
                 let tr = document.querySelector('tr');
                 let setumei = document.createElement('td');
@@ -73,6 +77,16 @@ function showResult(resp) {
         for (let a of data.list.e1){
             let tb = document.querySelector('tbody');	
             let y = document.createElement('tr');
+            s[i] = [];
+            for(i = 0; i < 6; i++){
+              s[i] = document.createElement('td');
+            }
+            s[0].textContent = a.title;
+            s[1].textContent = a.service.name;
+            s[2].textContent = a.start_name; 
+            s[3].textContent = a.end_time;
+            s[4].textContent = a.content;
+            s[5].textContent = a.act;
             for (let i = 0;i<6;i++){
                 let tr = document.querySelector('tr');
                 let setumei = document.createElement('td');
