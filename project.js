@@ -57,6 +57,7 @@ function showResult(resp) {
             let tb = document.querySelector('tbody');	
             let y = document.createElement('tr');
             Element.id = 'body';
+            tb.insertAdjacentElement('beforeend', y);
             var s = [a.titile,a.service.name,a.start_name,a.end_time,a.content,a.act];
             for (let i = 0;i<6;i++){
                 let tr = document.querySelector('tr#body');
@@ -70,6 +71,7 @@ function showResult(resp) {
             let tb = document.querySelector('tbody');	
             let y = document.createElement('tr');
             Element.id ='body';
+            tb.insertAdjacentElement('beforeend', y);
             var s = [a.titile,a.service.name,a.start_name,a.end_time,a.content,a.act];
             for (let i = 0;i<6;i++){
                 let tr = document.querySelector('tr#body');
