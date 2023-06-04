@@ -56,8 +56,10 @@ function showResult(resp) {
         for (let a of data.list.g1){
             let tb = document.querySelector('tbody');	
             let y = document.createElement('tr');
-            Element.id = 'body';
+
             tb.insertAdjacentElement('beforeend', y);
+            let x = document.querySelector('tr');
+            Element.id = 'body';
             var s = [a.titile,a.service.name,a.start_name,a.end_time,a.content,a.act];
             for (let i = 0;i<6;i++){
                 let tr = document.querySelector('tr#body');
@@ -70,8 +72,10 @@ function showResult(resp) {
         for (let a of data.list.e1){
             let tb = document.querySelector('tbody');	
             let y = document.createElement('tr');
-            Element.id ='body';
+            
             tb.insertAdjacentElement('beforeend', y);
+            let x = document.querySelector('tr');
+            Element.id = 'body';
             var s = [a.titile,a.service.name,a.start_name,a.end_time,a.content,a.act];
             for (let i = 0;i<6;i++){
                 let tr = document.querySelector('tr#body');
