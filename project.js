@@ -47,7 +47,7 @@ function showResult(resp) {
         data = JSON.parse(data);
     }
 
-    let kesu = document.querySelectorAll('tr#body');
+    let kesu = document.querySelectorAll('tbody > tr');
     for(let s of kesu){
       s.remove();
     }
@@ -58,11 +58,10 @@ function showResult(resp) {
             let y = document.createElement('tr');
 
             tb.insertAdjacentElement('beforeend', y);
-            let x = document.querySelector('tr');
-            Element.id = 'body';
-            var s = [a.titile,a.service.name,a.start_name,a.end_time,a.content,a.act];
+            
+            var s = [a.titile,a.subtitle,a.start_name,a.end_time,a.content,a.act];
             for (let i = 0;i<6;i++){
-                let tr = document.querySelector('tr#body');
+                let tr = document.querySelector('tbody > tr');
                 let j = document.createElement('td');
                 j.textContent = s[i];
                 tr.insertAdjacentElement('beforeend', j);
@@ -74,11 +73,10 @@ function showResult(resp) {
             let y = document.createElement('tr');
             
             tb.insertAdjacentElement('beforeend', y);
-            let x = document.querySelector('tr');
-            Element.id = 'body';
-            var s = [a.titile,a.service.name,a.start_name,a.end_time,a.content,a.act];
+            
+            var s = [a.titile,a.subtitle,a.start_name,a.end_time,a.content,a.act];
             for (let i = 0;i<6;i++){
-                let tr = document.querySelector('tr#body');
+                let tr = document.querySelector('tbody > tr');
                 let j = document.createElement('td');
                 j.textContent = s[i];
                 tr.insertAdjacentElement('beforeend', j);
