@@ -48,8 +48,8 @@ function showResult(resp) {
     }
 
     let kesu = document.querySelectorAll('tbody > tr');
-    for(let s of kesu){
-      s.remove();
+    for(let syoukyo of kesu){
+      syoukyo.remove();
     }
     let sv = document.querySelectorAll('input[name="bangumi"]');
     if(sv[0].checked){
