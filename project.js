@@ -61,7 +61,7 @@ function showResult(resp) {
             
             var s = [a.titile,a.subtitle,a.start_name,a.end_time,a.content,a.act];
             for (let i = 0;i<6;i++){
-                let tr = document.querySelector('tbody.rows['+table.rows.length-1+']');
+                let tr = document.querySelector('tbody.rows['+tbody.rows.length-1+']');
                 let j = document.createElement('td');
                 j.textContent = s[i];
                 tr.insertAdjacentElement('beforeend', j);
@@ -76,7 +76,7 @@ function showResult(resp) {
             
             var s = [a.titile,a.subtitle,a.start_name,a.end_time,a.content,a.act];
             for (let i = 0;i<6;i++){
-                let tr = document.querySelector('tbody.rows['+table.rows.length-1+']');
+                let tr = document.querySelector('tbody.rows['+tbody.rows.length-1+']');
                 let j = document.createElement('td');
                 j.textContent = s[i];
                 tr.insertAdjacentElement('beforeend', j);
