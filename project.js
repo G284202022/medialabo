@@ -59,7 +59,7 @@ function showResult(resp) {
 
             tb.insertAdjacentElement('beforeend', y);
             
-            var s = [a.titile,a.subtitle,a.start_name,a.end_time,a.content,a.act];
+            var s = [a.title,a.subtitle,a.start_time,a.end_time,a.content,a.act];
             for (let i = 0;i<6;i++){
                 let tr = y;
                 let j = document.createElement('td');
@@ -74,7 +74,7 @@ function showResult(resp) {
             
             tb.insertAdjacentElement('beforeend', y);
             
-            var s = [a.titile,a.subtitle,a.start_name,a.end_time,a.content,a.act];
+            var s = [a.title,a.subtitle,a.start_time,a.end_time,a.content,a.act];
             for (let i = 0;i<6;i++){
                 let tr = y;
                 let j = document.createElement('td');
